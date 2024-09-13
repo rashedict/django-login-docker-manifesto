@@ -26,3 +26,16 @@ spec:
           value: "django-insecure-o%=r^b2)pp&x*=&-6ot_tiki6zul_z%p-e6^iam0c2ceb-oad_"
         - name: ALLOWED_HOSTS
           value: "0.0.0.0"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: django-service
+spec:
+  selector:
+    app: django-app
+  ports:
+  - protocol: TCP
+    port: 80        # Port exposed outside the cluster
+    targetPort: 8000  # Port where Django app is running
+  type: LoadBalancer  # Expose it externally (Cloud setup) or use NodePort for local cluster
