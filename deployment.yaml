@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: django-container
-        image: django-app-image:latest  # Ensure there are no spaces in the image name or tag
+        image: django-app-image:v1.0  # Ensure there are no spaces in the image name or tag
         ports:
         - containerPort: 8000
         env:
