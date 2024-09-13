@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: django-container
-        image: rashed271202/django-login-docker:v1.0
+        image: rashed271202/django-login-docker:v1.1
         ports:
         - containerPort: 8000
         env:
