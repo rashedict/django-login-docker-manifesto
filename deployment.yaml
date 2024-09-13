@@ -38,4 +38,8 @@ spec:
   - protocol: TCP
     port: 80        # Port exposed outside the cluster
     targetPort: 8000  # Port where Django app is running
+<<<<<<< HEAD
   type: LoadBalancer  # Expose it externally (Cloud setup) or use NodePort for local cluster
+=======
+  type: LoadBalancer  # Expose it externally (Cloud setup) or use NodePort for local cluster
+>>>>>>> 0a0f9e7099afbde28e4267daafa390bb89b5c7b8
