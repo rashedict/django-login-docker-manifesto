@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: django-container
-        image: rashed271202/django-app-image:latest # Updated image path to Docker Hub
+        image: rashed271202/django-app-image:v1.0 # Updated image path to Docker Hub
         ports:
         - containerPort: 8000
         env:
